@@ -574,6 +574,13 @@ footer {
     z-index: 60;
   }
 
+
+  /* Skills Section - stack cards vertically */
+#skills .container > div {
+  grid-template-columns: 1fr !important;
+  gap: 20px;
+}
+
   nav {
     position: fixed;
     top: 60px;
@@ -694,6 +701,14 @@ footer {
 @media (max-width: 480px) {
   .nav-inner {
     padding: 8px 12px;
+  }
+
+  .skill-track {
+    height: 8px;
+  }
+  
+  .skill-percent {
+    font-size: 11px;
   }
 
   .brand {
