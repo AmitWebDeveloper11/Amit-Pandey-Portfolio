@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Amit Pandey | Portfolio</title>
+  <meta name="description" content="Amit Pandey, Full-Stack Developer. Explore my dark futuristic portfolio with projects, skills, and contact info. Web development, React, Node.js, MongoDB.">
+  <meta name="keywords" content="Amit Pandey, Full-Stack Developer, Web Developer, React, Node.js, Portfolio, Dark UI, JavaScript, MongoDB, Express">
+  <meta name="author" content="Amit Pandey">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Amit Pandey — Full-Stack Developer | Portfolio" />
+  <meta property="og:description" content="Explore my dark futuristic portfolio with projects, skills, and contact info. Web development, React, Node.js, MongoDB." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourwebsite.com/" />
+  <meta property="og:image" content="https://yourwebsite.com/image/portfolio-og.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Amit Pandey — Full-Stack Developer | Portfolio" />
+  <meta name="twitter:description" content="Explore my dark futuristic portfolio with projects, skills, and contact info. Web development, React, Node.js, MongoDB." />
+  <meta name="twitter:image" content="https://yourwebsite.com/image/portfolio-og.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/fav/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Amit Pandey",
+    "alternateName": "Ashok Kumar",
+    "jobTitle": "Full-Stack Developer",
+    "url": "https://yourwebsite.com",
+    "sameAs": [
+      "https://github.com/AmitWebDeveloper11",
+      "https://www.instagram.com/_amit___pandey_",
+      "https://t.me/KEEPITALONE07"
+    ],
+    "email": "ak253.com@gmail.com",
+    "image": "https://yourwebsite.com/image/image.png"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+ <header>
+  <div class="container nav-inner">
+    <div class="brand">
+      <div class="badge">AP</div>
+      <div>
+        <div class="muted">Web Developer</div>
+        <div class="name">Ashok kumar</div>
+        <p class="name" style="font-size: 10px;">Aka-(Amit Pandey)</p>
+      </div>
+    </div>
+
+    <!-- Hamburger icon for mobile -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- HERO -->
+  <main class="hero-wrap">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- LEFT PANEL -->
+        <aside class="side-panel" data-aos="fade-right" data-aos-delay="100">
+          <h4>PROFILE</h4>
+          <div style="margin-bottom:12px;">
+            <div class="small-ghost">ROLE: Full-Stack Developer</div>
+          </div>
+
+          <div style="margin-top:12px;">
+            <div class="stat"><div class="num">75+</div><div class="muted">Projects</div></div>
+            <div class="stat"><div class="num">2+</div><div class="muted">Years</div></div>
+            <div class="stat"><div class="num">1k</div><div class="muted">Followers</div></div>
+          </div>
+
+          <div style="margin-top:18px;">
+            <h4>CONTACT</h4>
+            <div class="muted" style="font-size:13px; margin-top:8px;">ak253.com@gmail.com</div>
+            <div style="margin-top:12px;">
+              <!-- Use an anchor tag with download attribute -->
+              <a href="cv/AshokKumar_CV.pdf">
+                <button class="small-ghost">Download CV</button>
+              </a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- CENTER PORTRAIT -->
+        <section class="portrait-frame" data-aos="zoom-in" data-aos-delay="200">
+          <div class="portrait-card">
+            <!-- HUD lines -->
+            <div class="hud-line-vert"></div>
+            <div class="hud-line-hor"></div>
+
+            <!-- main portrait image -->
+            <picture>
+              <!-- primary path: assets/hero.png ; fallback to uploaded file name -->
+              <img
+                src="image/image.png"
+                onerror="this.src='da5525fa-a40f-467f-9c4e-a3ca6158ac84.png'"
+                alt="Amit Portrait"
+                class="portrait-img"
+                crossorigin="anonymous"
+              />
+            </picture>
+
+            <!-- UI overlays on portrait -->
+            <div class="portrait-ui">
+              <div class="mini">
+                <div style="font-size:11px;color:var(--muted)">STATUS</div>
+                <div style="font-family:Orbitron,monospace;color:var(--accent);font-weight:700">ACTIVE</div>
+              </div>
+
+              <div class="mini">
+                <div style="font-size:11px;color:var(--muted)">ROLE</div>
+                <div style="font-weight:600;color:#fff">Full-Stack</div>
+              </div>
+            </div>
+
+            <div class="portrait-caption">Digital Identity • Dark UI • Cinematic</div>
+          </div>
+        </section>
+
+        <!-- RIGHT PANEL -->
+        <aside class="side-panel" data-aos="fade-left" data-aos-delay="100">
+          <h4>QUICK INFO</h4>
+          <div style="display:flex; gap:8px; margin-top:8px; flex-wrap:wrap;">
+            <div class="small-ghost">React</div>
+            <div class="small-ghost">Node.js</div>
+            <div class="small-ghost">AI</div>
+            <div class="small-ghost">UI/UX</div>
+          </div>
+
+          <div style="margin-top:16px;">
+            <h4>CONNECT</h4>
+            <div style="display:flex; gap:10px; margin-top:10px;">
+              <a class="small-ghost" href="https://t.me/KEEPITALONE07" aria-label="github">TG</a>
+              <a class="small-ghost" href="https://www.instagram.com/_amit___pandey_?igsh=MXY0ZjNjaHYyZjhldA==" aria-label="linkedin">IN</a>
+            </div>
+          </div>
+
+          <div style="margin-top:16px;">
+            <h4>LOCATION</h4>
+            <div class="muted" style="margin-top:8px">India</div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ABOUT -->
+  <section id="about" class="content">
+    <div class="container">
+      <h2 class="neon" data-aos="fade-up">About</h2>
+
+      <div class="cards-grid" style="margin-top:18px;">
+        <div class="card" data-aos="fade-up" data-aos-delay="80">
+          <h3>Overview</h3>
+          <p class="muted">I craft high-impact web applications with a cinematic visual approach, combining modern front-end technologies and AI integrations. My work focuses on performance, aesthetics and powerful UX.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="120">
+          <h3>Philosophy</h3>
+          <p class="muted">Design with intent. Keep the interface minimal but meaningful — subtle micro-interactions, clear hierarchy and strong visual rhythm.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="160">
+          <h3>Tools</h3>
+          <p class="muted">React, Tailwind, Node, Express, MongoDB, Vite, Three.js, Python (AI)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FULL-STACK TOOLS -->
+<section id="tools" class="content">
+  <div class="container">
+    <h2 data-aos="fade-up">Full-Stack Tools</h2>
+
+    <!-- FRONTEND TOOLS -->
+    <h4 class="muted" style="margin-top:18px;" data-aos="fade-up" data-aos-delay="50">Frontend</h4>
+    <div class="cards-grid" style="margin-top:12px;">
+      <div class="card" data-aos="fade-up" data-aos-delay="60" style="display:flex; align-items:center; gap:12px;">
+        <img src="image/react.svg" alt="React" style="width:32px; height:32px; filter: drop-shadow(0 0 10px rgba(3, 177, 235, 0.92));">
+        <span>React</span>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="80" style="display:flex; align-items:center; gap:12px;">
+        <img src="image/tali.png" alt="Tailwind CSS" style="width:32px; height:32px; filter: drop-shadow(0 0 10px rgba(3, 214, 229, 0.678));">
+        <span>Tailwind CSS</span>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="100" style="display:flex; align-items:center; gap:12px;">
+        <img src="image/html.svg" alt="HTML5" style="width:32px; height:32px;  filter: drop-shadow(0 0 10px rgba(238, 133, 5, 0.854));">
+        <span>HTML5</span>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="120" style="display:flex; align-items:center; gap:12px;">
+        <img src="image/css.svg" alt="CSS3" style="width:32px; height:32px; filter: drop-shadow(0 0 10px rgba(5, 147, 218, 0.893));">
+        <span>CSS3</span>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="120" style="display:flex; align-items:center; gap:12px;">
+        <img src="image/boots.png" alt="CSS3" style="width:32px; height:32px; filter: drop-shadow(0 0 10px purple);">
+        <span>BOOTSTRAP</span>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="140" style="display:flex; align-items:center; gap:12px;">
+        <img src="image/js.svg" alt="JavaScript" style="width:32px; height:32px; filter: drop-shadow(0 0 5px yellow);">
+        <span>JavaScript</span>
+      </div>
+    </div>
+
+    <!-- BACKEND TOOLS -->
+    <h4 class="muted" style="margin-top:28px;" data-aos="fade-up" data-aos-delay="160">Backend</h4>
+    <div class="cards-grid" style="margin-top:12px;">
+      <div class="card" data-aos="fade-up" data-aos-delay="170" style="display:flex; align-items:center; gap:12px;">
+        <img src="image/node.svg" alt="Node.js" style="width:32px; height:32px; filter: drop-shadow(0 0 10px rgba(96, 229, 14, 0.4));">
+        <span>Node.js</span>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="190" style="display:flex; align-items:center; gap:12px;">
+        <img src="image/express-js.png" alt="Express" style="width:32px; height:32px; filter: drop-shadow(0 0 10px rgba(232, 232, 4, 0.87));">
+        <span>Express</span>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="210" style="display:flex; align-items:center; gap:12px;">
+        <img src="image/mon.svg" alt="MongoDB" style="width:32px; height:32px; filter: drop-shadow(0 0 10px rgba(23, 168, 86, 0.969));">
+        <span>MongoDB</span>
+      </div>
+    </div>
+
+    <!-- DEPLOYMENT & OTHERS -->
+    <h4 class="muted" style="margin-top:28px;" data-aos="fade-up" data-aos-delay="250">Deployment & Tools</h4>
+    <div class="cards-grid" style="margin-top:12px;">
+      <div class="card" data-aos="fade-up" data-aos-delay="260" style="display:flex; align-items:center; gap:12px;">
+        <img src="image/vercel.svg" alt="Vercel" style="width:32px; height:32px; filter: drop-shadow(0 0 2px rgba(255,255,255,0.4));">
+        <span>Vercel</span>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="280" style="display:flex; align-items:center; gap:12px;">
+        <img src="image/git.svg" alt="GitHub" style="width:32px; height:32px;  filter: drop-shadow(0 0 2px rgba(255,255,255,0.4));">
+        <span>GitHub</span>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="300" style="display:flex; align-items:center; gap:12px;">
+        <img src="image/rende.png" alt="Docker" style="width:32px; height:32px; filter: drop-shadow(0 0 2px rgba(255,255,255,0.4));">
+        <span>Render</span>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="300" style="display:flex; align-items:center; gap:12px;">
+        <img src="image/railway.svg" alt="Docker" style="width:32px; height:32px; filter: drop-shadow(0 0 2px rgba(255,255,255,0.4));">
+        <span>Railway</span>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="300" style="display:flex; align-items:center; gap:12px;">
+        <img src="image/netlif.png" alt="Docker" style="width:32px; height:32px; filter: drop-shadow(0 0 10px rgba(5, 156, 183, 0.611));">
+        <span>Netlify</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- SKILLS -->
+  <section id="skills" class="content">
+    <div class="container">
+      <h2 data-aos="fade-up">Skills</h2>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr; gap:20px; margin-top:18px;">
+        <div class="card" data-aos="fade-right">
+          <h3>Frontend</h3>
+          <div style="margin-top:12px;">
+            <div class="muted">HTML / CSS<span class="skill-percent">90%</span></div>
+            <div class="skill-track mt-2"><div class="skill-fill" data-percent="90"></div></div>
+            <div class="muted" style="margin-top:8px">JavaScript / React<span class="skill-percent">80%</span></div>
+            <div class="skill-track mt-2"><div class="skill-fill" data-percent="80"></div></div>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-left">
+          <h3>Backend & AI</h3>
+          <div style="margin-top:12px;">
+            <div class="muted">Node.js / Express<span class="skill-percent">70%</span></div>
+            <div class="skill-track mt-2"><div class="skill-fill" data-percent="70"></div></div>
+            <div class="muted" style="margin-top:8px">MongoDB<span class="skill-percent">85%</span></div>
+            <div class="skill-track mt-2"><div class="skill-fill" data-percent="85"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="content">
+    <div class="container">
+      <h2 data-aos="fade-up">Projects</h2>
+
+      <div class="cards-grid" style="margin-top:18px;">
+       <a href="https://darksite.space/" style="text-decoration: none;">
+           <div class="card img-1" data-aos="fade-up">
+             <h3>Dark Site — Portfolio</h3>
+             <h6 style="color: rgba(255, 166, 0, 0.499);">View</h6>
+             <p class="muted">A cinematic portfolio theme with neon accents and advanced animations (this site is built on it).</p>
+           </div>
+       </a>
+       <a href="https://darkcommunity.space/" style="text-decoration: none;">
+           <div class="card img-2" data-aos="fade-up">
+             <h3>Dark Community</h3>
+             <h6 style="color: rgba(255, 166, 0, 0.499);">View</h6>
+             <p class="muted">Dark Community is a futuristic, dark-themed web development community and portfolio platform..</p>
+           </div>
+       </a>
+       <a href="#" style="text-decoration: none;">
+           <div class="card img-3" data-aos="fade-up" data-aos-delay="80">
+             <h3>AI Chatbot - Jarvis</h3>
+             <h6 style="color: rgba(255, 166, 0, 0.499);">under construction</h6>
+             <p class="muted">Jarvis is an intelligent conversational assistant built to understand natural language, 
+  provide real-time information,</p>
+           </div>
+       </a>
+       <a href="https://roovexa.netlify.app/" style="text-decoration: none;">
+           <div class="card img-4" data-aos="fade-up" data-aos-delay="120">
+             <h3>RooveXa</h3>
+             <h6 style="color: rgba(255, 166, 0, 0.499);">View</h6>
+             <p class="muted">RooveXa is a modern and interactive real estate website focused on the rapidly growing market of Gurugram..</p>
+           </div>
+       </a>
+       <a href="https://roovexa.netlify.app/" style="text-decoration: none;">
+           <div class="card img-5" data-aos="fade-up" data-aos-delay="120">
+              <h3>Tic Tac Toe Game</h3>
+              <h6 style="color: rgba(255, 166, 0, 0.499);">Play</h6>
+        <p style="color: rgba(245, 245, 245, 0.567);">Tic Tac Toe is a simple and fun strategy game , X and O. The game is played on a 3x3 grid..</p>
+           </div>
+       </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="content">
+    <div class="container">
+      <h2 data-aos="fade-up">Contact</h2>
+
+      <div class="card contact-form" data-aos="fade-up" style="margin-top:18px;">
+        <form id="contactForm">
+          <div style="display:flex; gap:12px;">
+            <input name="name" placeholder="Name" required class="px-4 py-3 bg-transparent border border-transparent rounded-md" style="flex:1; border:1px solid rgba(255,255,255,0.04);  color: rgba(245, 245, 245, 0.58);" />
+            <input name="email" placeholder="Email" required class="px-4 py-3 bg-transparent border border-transparent rounded-md" style="flex:1; border:1px solid rgba(255,255,255,0.04); color: rgba(245, 245, 245, 0.58);" />
+          </div>
+          <textarea name="message" placeholder="Message" required rows="5" class="mt-4 px-4 py-3 w-full" style="border-radius:10px; border:1px solid rgba(255,255,255,0.04); background:transparent;  color: rgba(245, 245, 245, 0.58);"></textarea>
+
+          <a href="./resume/Resume.pdf" style="text-decoration: none;">
+            <div style="margin-top:12px; display:flex; gap:12px;">
+              <button type="submit" class="px-6 py-3" style="background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#111; border-radius:10px; box-shadow:0 8px 30px rgba(255,122,24,0.08);">Send Message</button>
+              <button type="button" class="px-5 py-3 small-ghost">Download Resume</button>
+            </div>
+          </a>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div style="display:flex; align-items:center; justify-content:center; gap:16px;">
+        <div style="width:8px;height:8px;border-radius:50%; background:var(--accent); box-shadow:0 6px 20px rgba(255,122,24,0.12)"></div>
+        <div class="muted">© 2025 Amit Pandey — Crafted in Dark UI</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('show');
+  document.body.classList.toggle('nav-open'); // disables horizontal scroll
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // =========================
+  // Skill Bar Animation
+  // =========================
+  const skillFills = document.querySelectorAll(".skill-fill");
+  function animateSkills() {
+    skillFills.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if(rect.top < window.innerHeight - 60 && !el.classList.contains("animated")) {
+        const target = el.getAttribute("data-percent") || 80;
+        el.style.width = target + "%";
+        el.classList.add("animated"); // ensure one-time animation
+      }
+    });
+  }
+  window.addEventListener("scroll", animateSkills);
+  window.addEventListener("load", animateSkills);
+
+
+  
+  // =========================
+  // WhatsApp Form Handler
+  // =========================
+  const form = document.getElementById("contactForm");
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const name = this.name.value.trim();
+    const email = this.email.value.trim();
+    const message = this.message.value.trim();
+    const phoneNumber = "917210271354";
+
+    const whatsappMessage = 
+      "✨ *You’ve Received a New Inquiry!* ✨%0A" +
+      "━━━━━━━━━━━━━━━%0A" +
+      "👤 *Full Name:* " + encodeURIComponent(name) + "%0A" +
+      "📧 *Email Address:* " + encodeURIComponent(email) + "%0A" +
+      "💬 *Message:* " + encodeURIComponent(message) + "%0A" +
+      "━━━━━━━━━━━━━━━%0A" +
+      "📅 *Date:* " + encodeURIComponent(new Date().toLocaleString()) + "%0A" +
+      "🔗 This message was sent via your 🌐 *Portfolio Contact Form* 🚀";
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+    window.open(whatsappURL, "_blank");
+
+    // reset form if needed
+    this.reset();
+  });
+
+  // =========================
+  // AOS init
+  // =========================
+  AOS.init({ duration:900, once:true, easing:'ease-out-cubic' });
+
+  // =========================
+  // Particles
+  // =========================
+  particlesJS('particles-js', {
+    particles:{
+      number:{value:55,density:{enable:true,value_area:800}},
+      color:{value:"#ff7700"},
+      shape:{type:"circle"},
+      opacity:{value:0.08, random:true},
+      size:{value:3, random:true},
+      line_linked:{enable:true, distance:140, color:"#ff7a18", opacity:0.03, width:1},
+      move:{enable:true, speed:0.6, direction:"none", out_mode:"out"}
+    },
+    retina_detect:true
+  });
+
+  // =========================
+  // Smooth scroll nav
+  // =========================
+  document.querySelectorAll('nav a').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const id = a.getAttribute('href');
+      document.querySelector(id).scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+});
+
+  AOS.init();
+</script>
+</body>
+</html>
