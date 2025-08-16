@@ -149,7 +149,7 @@ nav a:hover {
   grid-template-columns: 260px 1fr 260px;
   gap: 24px;
   align-items: start;
-  min-height: 84vh;
+  min-height: 10vh;
 }
 
 /* Side panels */
@@ -326,6 +326,68 @@ section.content {
   letter-spacing: 1px;
   font-size: 16px;
 }
+
+
+
+
+
+
+
+/* 🔥 Smooth Orange Glow Animation */
+@keyframes orangeGlow {
+  0% {
+    background: transparent;
+    box-shadow: none;
+  }
+  2% {
+    box-shadow: 0 15px 30px rgba(175, 118, 3, 0.294), 0 0 15px rgba(255, 122, 24, 0.02); /* Fade in */
+  }
+  5%, 7% { /* Peak glow for ~0.28s (4% of 14s cycle) */
+    box-shadow: 0 30px 60px rgba(175, 118, 3, 0.587), 0 0 30px rgba(255, 122, 24, 0.04);
+  }
+  10% {
+    box-shadow: 0 15px 30px rgba(175, 118, 3, 0.294), 0 0 15px rgba(18, 8, 2, 0.02); /* Fade out */
+  }
+  10.01%, 100% {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+/* Base style for cards */
+#tools .card {
+  animation: orangeGlow 14s infinite; /* Total cycle: 14 tools * 1s each */
+}
+
+/* Sequential delays for each card */
+#tools .cards-grid:nth-of-type(1) .card:nth-child(1) { animation-delay: 0s; }   /* React */
+#tools .cards-grid:nth-of-type(1) .card:nth-child(2) { animation-delay: 1s; }   /* Tailwind */
+#tools .cards-grid:nth-of-type(1) .card:nth-child(3) { animation-delay: 2s; }   /* HTML */
+#tools .cards-grid:nth-of-type(1) .card:nth-child(4) { animation-delay: 3s; }   /* CSS */
+#tools .cards-grid:nth-of-type(1) .card:nth-child(5) { animation-delay: 4s; }   /* Bootstrap */
+#tools .cards-grid:nth-of-type(1) .card:nth-child(6) { animation-delay: 5s; }   /* JS */
+#tools .cards-grid:nth-of-type(2) .card:nth-child(1) { animation-delay: 6s; }   /* Node */
+#tools .cards-grid:nth-of-type(2) .card:nth-child(2) { animation-delay: 7s; }   /* Express */
+#tools .cards-grid:nth-of-type(2) .card:nth-child(3) { animation-delay: 8s; }   /* MongoDB */
+#tools .cards-grid:nth-of-type(3) .card:nth-child(1) { animation-delay: 9s; }   /* Vercel */
+#tools .cards-grid:nth-of-type(3) .card:nth-child(2) { animation-delay: 10s; }  /* GitHub */
+#tools .cards-grid:nth-of-type(3) .card:nth-child(3) { animation-delay: 11s; }  /* Render */
+#tools .cards-grid:nth-of-type(3) .card:nth-child(4) { animation-delay: 12s; }  /* Railway */
+#tools .cards-grid:nth-of-type(3) .card:nth-child(5) { animation-delay: 13s; }  /* Netlify */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .muted {
   color: var(--muted);
